@@ -1,0 +1,25 @@
+---
+TDD-Perl-Samples.git:
+  vendor: 07f237f24aec3becf2bb0a4bea9d8f7c2aabc421
+cpan-Class-Inner:
+  vendor: 0.200001
+cpan-Class-Inspector:
+  vendor: 1.24
+cpan-Devel-Symdump:
+  vendor: 2.08
+cpan-Error:
+  vendor: 0.17016
+cpan-Exception-Base:
+  vendor: 0.2401
+cpan-Symbol-Util:
+  vendor: 0.0202
+cpan-Test-Assert:
+  vendor: 0.0504
+cpan-Test-Unit:
+  vendor: 0.25
+cpan-Test-Unit-Lite:
+  vendor: 0.12
+cpan-constant-boolean:
+  vendor: 0.02
+cpan-parent:
+  vendor: 0.223

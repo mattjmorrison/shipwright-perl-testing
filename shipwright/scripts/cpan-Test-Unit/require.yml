@@ -1,0 +1,10 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-Class-Inner:
+    version: 0
+  cpan-Devel-Symdump:
+    version: 0
+  cpan-Error:
+    version: 0

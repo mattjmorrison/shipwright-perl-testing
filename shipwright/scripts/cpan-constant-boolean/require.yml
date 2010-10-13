@@ -1,0 +1,7 @@
+---
+build_requires: {}
+conflicts: {}
+recommends: {}
+requires:
+  cpan-Symbol-Util:
+    version: 0.02

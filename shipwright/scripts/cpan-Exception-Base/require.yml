@@ -1,0 +1,7 @@
+---
+build_requires:
+  cpan-Test-Unit-Lite:
+    version: 0.12
+conflicts: {}
+recommends: {}
+requires: {}

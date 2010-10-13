@@ -1,0 +1,219 @@
+------------------------------------------------------------------------
+0.12 | Piotr Roszatycki <dexter@debian.org> | 2009-02-12
+
+Changes:
+
+* Method "list_tests" returns methods from own class and base classes.
+* Method "tear_down" is called if "set_up" failed too.
+
+------------------------------------------------------------------------
+0.1101 | Piotr Roszatycki <dexter@debian.org> | 2008-12-30
+
+Changes:
+
+* Code was slightly reformatted.
+
+------------------------------------------------------------------------
+0.11 | Piotr Roszatycki <dexter@debian.org> | 2008-12-16
+
+New:
+
+* New type of test status "failure" is set if the test unit fails.
+* Old type of test status "error" is set if error was occured in "set_up" or
+  "tear_down" method.
+* Error on "set_up" or "tear_down" doesn't stop whole test runner.
+
+Fixes:
+
+* Fix for tainted mode.
+
+------------------------------------------------------------------------
+0.1003 | Piotr Roszatycki <dexter@debian.org> | 2008-12-08
+
+Changes:
+
+* Stringify eval error explicity in case that exception object doesn't
+  support "eq" operator.
+  
+* Does not use Symbol::stash sub.
+
+------------------------------------------------------------------------
+0.1002 | Piotr Roszatycki <dexter@debian.org> | 2008-10-13
+
+Changes:
+
+* Propagate die in the right way.
+
+* Do not put empty line before "not ok" message.
+
+------------------------------------------------------------------------
+0.1001 | Piotr Roszatycki <dexter@debian.org> | 2008-10-08
+
+Changes:
+
+* Fixed some warnings.
+
+------------------------------------------------------------------------
+0.10 | Piotr Roszatycki <dexter@debian.org> | 2008-10-08
+
+Changes:
+
+* The failures are more verbose and dumps stack trace via Carp::confess.
+
+------------------------------------------------------------------------
+0.0904 | Piotr Roszatycki <dexter@debian.org> | 2008-04-15
+
+Fixes:
+
+* Be more paranoid in taint mode.
+
+------------------------------------------------------------------------
+0.0903 | Piotr Roszatycki <dexter@debian.org> | 2008-04-12
+
+Fixes:
+
+* Rebuild README with Pod::Readme.
+
+------------------------------------------------------------------------
+0.0902 | Piotr Roszatycki <dexter@debian.org> | 2008-04-12
+
+Fixes:
+
+* Fix incompatibility with Perl v5.6.
+
+------------------------------------------------------------------------
+0.0901 | Piotr Roszatycki <dexter@debian.org> | 2008-02-05
+
+Fixes:
+
+* Drop accidental dependency on Exception::Base.
+
+------------------------------------------------------------------------
+0.09 | Piotr Roszatycki <dexter@debian.org> | 2008-02-05
+
+Fixes:
+
+* Fix Windows compatibility problem in Test::Unit::TestSuite::suite.
+  RT #32936.
+* Fix inconsistent type for $self->{units} in Test::Unit::TestSuite::new.
+  RT #32934, #32935.
+
+Changes:
+
+* Support for tainted mode.
+
+------------------------------------------------------------------------
+0.08 | Piotr Roszatycki <dexter@debian.org> | 2008-01-10
+
+Changes:
+
+* set_up and tear_down are called before/after each test unit, not just
+  before/after test suite. Closes: #32185.
+
+------------------------------------------------------------------------
+0.0701 | Piotr Roszatycki <dexter@debian.org> | 2007-10-30
+
+Fixes:
+
+* Check if expected value is defined for assert_matches and
+  assert_not_matches.
+* Fix test scripts after cpan-testers report.
+
+Changes:
+
+* Updated POD documentation.
+
+------------------------------------------------------------------------
+0.07 | Piotr Roszatycki <dexter@debian.org> | 2007-10-29
+
+Changes:
+
+* Report is printed immediately (non-buffered output): Runner object is
+  passed to Suite object for run method.
+* Warnings are fatal for own test units.
+
+------------------------------------------------------------------------
+0.0601 | Piotr Roszatycki <dexter@debian.org> | 2007-10-13
+
+Fixes:
+
+* Replace Symbol::fetch_glob with Symbol::stash for Kurila compatibility.
+* Ignore modules which are not based on Test::Unit::TestCase.
+
+------------------------------------------------------------------------
+0.06 | Piotr Roszatycki <dexter@debian.org> | 2007-10-13
+
+Changes:
+
+* Use warnings.
+* Compatibility with Kurila 1.4.
+* New test units for bad suites.
+* Test::Unit::TestRunner prints text statistics.
+* Test::Unit::HarnessUnit outputs TAP stream.
+* Do not test POD errors unless $ENV{PERL_TEST_POD} is true.
+
+------------------------------------------------------------------------
+0.05 | Piotr Roszatycki <dexter@debian.org> | 2007-10-05
+
+Changes:
+
+* Print Class::Name::test_sub in TAP output.
+
+Fixes:
+
+* Reformat whitespaces in source code.
+
+------------------------------------------------------------------------
+0.0402 | Piotr Roszatycki <dexter@debian.org> | 2007-09-27
+
+Fixes:
+
+* Remove test unit which compares numerically hex value.  It works differently
+  on several Perl versions.
+
+------------------------------------------------------------------------
+0.0401 | Piotr Roszatycki <dexter@debian.org> | 2007-09-23
+
+Fixes:
+
+* Fix incompatibility with 5.006 (Exporter, numerification for "0xF00"
+  string).
+
+------------------------------------------------------------------------
+0.04 | Piotr Roszatycki <dexter@debian.org> | 2007-09-23
+
+Fixes:
+
+* Redirect error messages to STDERR.
+* Autoflush STDOUT and STDERR.
+* The error messages are prefixed with "# " string.
+
+Changes:
+
+* Switched to Module::Build.
+* Documentation of API.
+* Ported some test units from Test::Unit package.
+* The error messages are more compatible with Test::Unit.
+* Added Test::Unit::TestCase->fail method.
+* Added Test::Unit::TestSuite->name and units accessors.
+
+------------------------------------------------------------------------
+0.03 | Piotr Roszatycki <dexter@debian.org> | 2007-05-22
+
+Fixes:
+
+* Added "Boolean assertion failed" message on failed assert() check.
+* Removed "undefined value" warning if message is empty.
+
+------------------------------------------------------------------------
+0.02 | Piotr Roszatycki <dexter@debian.org> | 2007-05-11
+
+* Fix incompatibility with 5.006.
+* Try to fix syntax error on 5.009.
+
+------------------------------------------------------------------------
+0.01 | Piotr Roszatycki <dexter@debian.org> | 2007-05-09
+
+* Development release.
+
+------------------------------------------------------------------------

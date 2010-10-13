@@ -1,0 +1,23 @@
+---
+abstract: 'Lightweight exceptions'
+author:
+  - 'Piotr Roszatycki <dexter@cpan.org>'
+build_requires:
+  Test::Unit::Lite: 0.12
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Exception-Base
+provides:
+  Exception::Base:
+    file: lib/Exception/Base.pm
+    version: 0.2401
+requires:
+  perl: 5.006
+resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Exception-Base
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/dex4er/perl-Exception-Base
+version: 0.2401

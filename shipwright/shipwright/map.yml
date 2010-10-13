@@ -1,0 +1,12 @@
+---
+Class::Inner: cpan-Class-Inner
+Class::Inspector: cpan-Class-Inspector
+Devel::Symdump: cpan-Devel-Symdump
+Error: cpan-Error
+Exception::Base: cpan-Exception-Base
+Symbol::Util: cpan-Symbol-Util
+Test::Assert: cpan-Test-Assert
+Test::Unit: cpan-Test-Unit
+Test::Unit::Lite: cpan-Test-Unit-Lite
+constant::boolean: cpan-constant-boolean
+parent: cpan-parent

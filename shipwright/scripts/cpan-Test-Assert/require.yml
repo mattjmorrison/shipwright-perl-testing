@@ -1,0 +1,17 @@
+---
+build_requires:
+  cpan-Class-Inspector:
+    version: 0
+  cpan-Test-Unit-Lite:
+    version: 0.11
+  cpan-parent:
+    version: 0
+conflicts: {}
+recommends: {}
+requires:
+  cpan-Exception-Base:
+    version: 0.21
+  cpan-Symbol-Util:
+    version: 0.0202
+  cpan-constant-boolean:
+    version: 0.02
