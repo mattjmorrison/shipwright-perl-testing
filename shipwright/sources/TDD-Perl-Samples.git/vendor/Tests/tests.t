@@ -19,7 +19,6 @@ BEGIN {
 	push(@INC, @paths);
 	@INC = reverse(@INC);
 }
-
-use Test::Unit::HarnessUnit;
-my $r = Test::Unit::HarnessUnit->new();
+use Test::Unit::Runner::XML;
+my $r = Test::Unit::Runner::XML->new();
 $r->start('Tests::BlogTests');
