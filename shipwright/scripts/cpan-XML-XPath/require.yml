@@ -1,0 +1,6 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-XML-Parser:
+    version: 2.23

@@ -1,0 +1,6 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-HTML-Tagset:
+    version: 3

@@ -1,0 +1,14 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-Compress-Raw-Zlib:
+    version: 0
+  cpan-HTML-Parser:
+    version: 3.33
+  cpan-HTML-Tagset:
+    version: 0
+  cpan-IO-Compress:
+    version: 0
+  cpan-URI:
+    version: 1.10

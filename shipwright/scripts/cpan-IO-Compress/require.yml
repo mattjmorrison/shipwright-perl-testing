@@ -1,0 +1,8 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-Compress-Raw-Bzip2:
+    version: 2.030
+  cpan-Compress-Raw-Zlib:
+    version: 2.030

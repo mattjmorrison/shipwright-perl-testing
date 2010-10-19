@@ -1,0 +1,6 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-libwww-perl:
+    version: 0

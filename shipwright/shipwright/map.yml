@@ -1,12 +1,27 @@
 ---
 Class::Inner: cpan-Class-Inner
 Class::Inspector: cpan-Class-Inspector
+Compress::Raw::Bzip2: cpan-Compress-Raw-Bzip2
+Compress::Raw::Zlib: cpan-Compress-Raw-Zlib
 Devel::Symdump: cpan-Devel-Symdump
 Error: cpan-Error
 Exception::Base: cpan-Exception-Base
+HTML::Parser: cpan-HTML-Parser
+HTML::Tagset: cpan-HTML-Tagset
+IO::Compress::Deflate: cpan-IO-Compress
+IO::Compress::Gzip: cpan-IO-Compress
+IO::Uncompress::Gunzip: cpan-IO-Compress
+IO::Uncompress::Inflate: cpan-IO-Compress
+IO::Uncompress::RawInflate: cpan-IO-Compress
+LWP: cpan-libwww-perl
 Symbol::Util: cpan-Symbol-Util
 Test::Assert: cpan-Test-Assert
 Test::Unit: cpan-Test-Unit
 Test::Unit::Lite: cpan-Test-Unit-Lite
+Test::Unit::Runner::XML: cpan-Test-Unit-Runner-Xml
+URI: cpan-URI
+XML::Generator: cpan-XML-Generator
+XML::Parser: cpan-XML-Parser
+XML::XPath: cpan-XML-XPath
 constant::boolean: cpan-constant-boolean
 parent: cpan-parent

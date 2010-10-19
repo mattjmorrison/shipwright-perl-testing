@@ -1,0 +1,10 @@
+---
+build_requires: {}
+recommends: {}
+requires:
+  cpan-Test-Unit:
+    version: 0.24
+  cpan-XML-Generator:
+    version: 0
+  cpan-XML-XPath:
+    version: 0
