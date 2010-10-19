@@ -14,7 +14,7 @@ BEGIN {
 		"$cwd/cpan-constant-boolean/vendor/lib/",
 		"$cwd/cpan-parent/vendor/lib/");
 
-	push(@INC, $testUnitPath);
+	push(@INC, @paths);
 	@INC = reverse(@INC);
 }
 
