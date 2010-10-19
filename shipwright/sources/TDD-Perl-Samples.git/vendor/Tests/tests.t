@@ -1,7 +1,9 @@
 BEGIN {
 	use Cwd;
 	my $cwd = getcwd . '/../../..';
-	my @paths = ("$cwd/cpan-Test-Unit/vendor/lib/",
+	my @paths = (
+		"..",
+		"$cwd/cpan-Test-Unit/vendor/lib/",
 		"$cwd/cpan-Class-Inner/vendor/lib/",
 		"$cwd/cpan-Class-Inspector/vendor/lib/",
 		"$cwd/cpan-Devel-Symdump/vendor/lib/",
