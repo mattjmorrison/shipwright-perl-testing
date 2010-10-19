@@ -20,5 +20,5 @@ BEGIN {
 	@INC = reverse(@INC);
 }
 use Test::Unit::Runner::XML;
-my $r = Test::Unit::Runner::XML->new();
+my $r = Test::Unit::Runner::XML->new('testxml');
 $r->start('Tests::BlogTests');
