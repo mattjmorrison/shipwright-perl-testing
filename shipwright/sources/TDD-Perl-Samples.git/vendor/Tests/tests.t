@@ -3,6 +3,7 @@ BEGIN {
 	my $cwd = getcwd;
 	my $testUnitPath = "$cwd/cpan-Test-Unit/vendor/lib/";
 	push(@INC, $testUnitPath);
+	@INC = reverse(@INC);
 }
 
 use Test::Unit::HarnessUnit;
